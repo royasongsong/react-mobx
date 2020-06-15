@@ -26,7 +26,7 @@ export default inject("store") (observer(class Counter extends Component {
             <div style={{marginBottom: 10}}>
                 <button style={{marginRight: 10, width: 30, height: 30}} onClick={handleClick.bind(this, "increase", this.state.caption)}>+</button>
                 <button style={{marginRight: 10, width: 30, height: 30}} onClick={handleClick.bind(this, "decrease", this.state.caption)}>-</button>
-                <span>{defaultValue[this.state.caption]}</span>
+                <span>{this.state.caption + "-----" + defaultValue[this.state.caption]}</span>
             </div>)
     }
 }))

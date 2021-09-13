@@ -10,6 +10,7 @@ export default inject("store") (observer(class Counter extends Component {
         }
     }
 
+    //111
     // static getDerivedStateFromProps(nextProps, prevState) {
     //     if (nextProps.value[nextProps.caption] !== prevState.num) {
     //         return {
